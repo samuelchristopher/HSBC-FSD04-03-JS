@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Harisenin - FSD04 Tugas JavaScript</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon_transparent_32x32.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="assets/images/logotransparent.png" alt="logo-harisenin" width="175px">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">JavaScript 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="weather.html">Weather API</a>
+                    <a href="calculator.html">Simple Calculator</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+        <div>
+            <h1>Simple Calculator</h1>
+        </div>
+    </section>
+    <section>
+        <div class="flex-container-column card">
+            <div class="display">
+              <h1 id="displayNumber">0</h1>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">7</div>
+              <div class="button">8</div>
+              <div class="button">9</div>
+              <div class="button negative">+/-</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">4</div>
+              <div class="button">5</div>
+              <div class="button">6</div>
+              <div class="button operator">-</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">1</div>
+              <div class="button">2</div>
+              <div class="button">3</div>
+              <div class="button operator">+</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button clear">CE</div>
+              <div class="button">0</div>
+              <div class="button equals double">=</div>
+            </div>
+          </div>
+      
+          <div class="history card">
+            <h2>Riwayat Perhitungan</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Angka Pertama</th>
+                  <th>Operator</th>
+                  <th>Angka Kedua</th>
+                  <th>Hasil</th>
+                </tr>
+              </thead>
+              <tbody id="historyList"></tbody>
+            </table>
+          </div>
+          
+          <script src="assets/js/storage.js"></script>
+          <script src="assets/js/kalkulator.js"></script>
+    </section>
+    <footer>
+        Copyright &copy; 2023 Samuel Christopher Santo
+    </footer>
+</body>
+</html>
