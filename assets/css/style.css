@@ -65,20 +65,25 @@ body {
 }
 
 .menu {
-    float: right;
+    float: left;
     overflow: hidden;
     margin: 20px;
     align-items: center;
 }
 
 .btn {
-    padding: 8px 20px;
+    appearance: button;
+    -webkit-appearance: button; /* Safari and Chrome */
+    -moz-appearance: button; /* Firefox */
+    -ms-appearance: button; /* Internet Explorer */
+    -o-appearance: button; /* Opera */
+    text-decoration: none;
+    padding: 2px 20px;
     margin: 5px;
     border: 1px solid black;
     border-radius: 3px;
     background-color: white;
     color: #1C315E;
-    appearance: button;
     cursor: pointer;
 }
 
@@ -108,4 +113,10 @@ body {
     padding: 150px 0;
     text-align: center;
     background-color: #7286D3;
+}
+
+footer {
+    margin: auto;
+    padding: 20px 0 20px 30px;
+    background-color: white;
 }
