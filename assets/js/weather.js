@@ -1,13 +1,14 @@
-let weatherTime = document.getElementById('weather-time');
-let weatherLoc = document.getElementById('weather-loc');
-let weatherTemp = document.getElementById('weather-temp');
-let weatherIcon = document.getElementById('weather-icon');
-let weatherSimpleDesc = document.getElementById('weather-simple-desc');
-let weatherLongDesc = document.getElementById('weather-long-desc');
-let weatherPressure = document.getElementById('weather-pressure');
-let weatherHumidity = document.getElementById('weather-humidity');
-let weatherSunrise = document.getElementById('weather-sunrise');
-let weatherSunset = document.getElementById('weather-sunset');
+// use const for JS DOM because JS DOM usually not changed through usage
+const weatherTime = document.getElementById('weather-time');
+const weatherLoc = document.getElementById('weather-loc');
+const weatherTemp = document.getElementById('weather-temp');
+const weatherIcon = document.getElementById('weather-icon');
+const weatherSimpleDesc = document.getElementById('weather-simple-desc');
+const weatherLongDesc = document.getElementById('weather-long-desc');
+const weatherPressure = document.getElementById('weather-pressure');
+const weatherHumidity = document.getElementById('weather-humidity');
+const weatherSunrise = document.getElementById('weather-sunrise');
+const weatherSunset = document.getElementById('weather-sunset');
 
 const hpaToAtm = 0.0009869233;
 
@@ -27,7 +28,7 @@ function convertEpochToSpecificTimezone(timeEpoch, offset) {
   return dateTimeConv;
 }
 
-let promise1 = new Promise(function (resolve, reject) {
+let promise = new Promise(function (resolve, reject) {
   let xhr = new XMLHttpRequest(),
     method = 'GET',
     url =
@@ -42,7 +43,7 @@ let promise1 = new Promise(function (resolve, reject) {
   xhr.send();
 });
 
-promise1.then(function (value) {
+promise.then(function (value) {
   weatherLoc.innerHTML = '<h1><b>' + value.name + '</b></h1>';
   weatherTime.innerText =
     'Data diambil pada: ' + convertEpochToSpecificTimezone(value.dt, +7);
