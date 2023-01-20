@@ -34,11 +34,94 @@
             <h1>Weather API by OpenWeather</h1>
         </div>
     </section>
-    <section>
-        
+    <section class="flex-container-weather">
+        <div class="card">
+            <table>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td colspan="2">
+                        <div id="weather-loc">
+                            weather-loc
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td colspan="2">
+                        <div id="weather-time">
+                            weather-time
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td>
+                        <div id="weather-temp" style="font-size: 3em;">
+                            weather-temp
+                        </div>
+                    </td>
+                    <td>
+                        <div id="weather-icon">
+                            weather-icon
+                        </div>
+                        <div id="weather-simple-desc">
+                            weather-simple-desc
+                        </div>
+                        <div id="weather-long-desc">
+                            weather-long-desc
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td>
+                        <div>
+                            <b>Tekanan udara</b>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="weather-pressure">
+                            weather-pressure
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td>
+                        <div>
+                            <b>Kelembaban</b>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="weather-humidity">
+                            weather-humidity
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+                    <td colspan="2">
+                        <div>
+                            <b>Posisi Matahari</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-left: 1px solid black; border-right: 1px solid black;">
+                    <td>Terbit</td>
+                    <td>Terbenam</td>
+                </tr>
+                <tr style="border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;">
+                    <td>
+                        <div id="weather-sunrise">
+                            weather-sunrise
+                        </div>
+                    </td>
+                    <td>
+                        <div id="weather-sunset">
+                            weather-sunset
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
     <footer>
         Copyright &copy; 2023 Samuel Christopher Santo
     </footer>
+    <script src="assets/js/weather.js"></script>
 </body>
 </html>

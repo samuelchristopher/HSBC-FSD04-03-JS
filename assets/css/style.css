@@ -100,9 +100,23 @@ body {
     justify-content: space-around;
 }
 
+.flex-container-weather {
+    display: flex;
+    justify-content: space-around;
+}
+
 .flex-container > div {
     width: 500px;
     margin: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.flex-container-weather > div {
+    width: 700px;
+    margin: 50px;
+    align-self: center;
     text-align: center;
     line-height: 50px;
     font-size: 18px;
@@ -168,7 +182,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 30px;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .button:hover {
@@ -199,12 +213,16 @@ th {
     color: white;
 }
 
-tr:nth-child(even){
+.calc-history tr:nth-child(even){
     background-color: white;
 }
 
-tr:nth-child(odd){
+.calc-history tr:nth-child(odd){
     background-color: #d2d2d2;
+}
+
+tr {
+    background-color: #c2c2c2;
 }
 
 @media screen and (max-width: 513px) {
