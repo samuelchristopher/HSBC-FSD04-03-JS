@@ -12,9 +12,9 @@ let weatherSunset = document.getElementById('weather-sunset');
 const hpaToAtm = 0.0009869233;
 
 function convertEpochToSpecificTimezone(timeEpoch, offset) {
-  let d = new Date(timeEpoch * 1000);
+  let d = new Date(timeEpoch * 1000); // * 1000 to set unix timestamp from second to milisecond
   let utc = d.getTime() + d.getTimezoneOffset() * 60000; //This converts to UTC 00:00
-  let nd = new Date(utc + 3600000 * offset);
+  let nd = new Date(utc + 3600000 * offset); // 3600000 = 1 hour in milisecond
   let day = nd.toLocaleString('id-ID', { day: 'numeric' });
   let month = nd.toLocaleString('id-ID', { month: 'long' });
   let year = nd.toLocaleString('id-ID', { year: 'numeric' });
